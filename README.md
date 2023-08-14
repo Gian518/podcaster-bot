@@ -23,7 +23,7 @@ Add services which hosts your podcast in the `src > services.ts` file (note that
 
 ### Run the bot
 
-For production use, you have to run `build > index.js` with a process manager like [pm2](https://pm2.keymetrics.io/). Remember that you can always copy your `build` folder and place it everywhere in your server/container. You don't need the entire project to run the bot in production.
+For production use, you have to run `build > index.js` with a process manager like [pm2](https://pm2.keymetrics.io/).
 
 ## The T library
 

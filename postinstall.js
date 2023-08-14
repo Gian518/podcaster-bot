@@ -1,5 +1,8 @@
 const fs = require('fs')
+const { exec } = require('child_process')
 
+// Create build directory
+exec('mkdir build')
 // Create history file
 fs.writeFileSync('build/history.json', '[]')
 console.log('> History file created')

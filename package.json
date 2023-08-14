@@ -1,0 +1,39 @@
+{
+  "name": "podcaster-bot",
+  "version": "1.0.0",
+  "description": "A Telegram bot which automatically publish new podcast contents in a channel.",
+  "main": "src/index.ts",
+  "scripts": {
+    "postinstall": "node postinstall.js",
+    "start": "npx tsc && echo 'Compilation complete!' && cd build && node index.js && cd ..",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gian518/podcaster-bot.git"
+  },
+  "keywords": [
+    "Telegram",
+    "bot",
+    "podcast"
+  ],
+  "author": "Gian518",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gian518/podcaster-bot/issues"
+  },
+  "homepage": "https://github.com/Gian518/podcaster-bot#readme",
+  "dependencies": {
+    "cron": "^2.4.0",
+    "dotenv": "^16.3.1",
+    "node-telegram-bot-api": "^0.61.0",
+    "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.3.1",
+    "@types/node": "^20.4.10",
+    "@types/node-telegram-bot-api": "^0.61.7",
+    "@types/xml2js": "^0.4.11",
+    "typescript": "^5.1.6"
+  }
+}
